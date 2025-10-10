@@ -1,0 +1,10 @@
+API Documentation v2.1: Key Endpoints and Usage
+Endpoint: /api/v2/user_data
+Purpose: Securely retrieves user profile information.
+Latency SLA: 99.9% of calls must complete in under 500ms.
+Dependencies: Requires authentication via OAuth 2.0 token.
+
+Endpoint: /api/v2/transaction_log
+Purpose: Posts new customer transactions.
+Rate Limit: 100 requests per minute (RPM) per user.
+Data Format: JSON payload required with 'amount' and 'customer_id' fields.
